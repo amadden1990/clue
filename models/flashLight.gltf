@@ -1,0 +1,273 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 678,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 678,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 678,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 678,
+      "type": "VEC3",
+      "max": [
+        0.7150541,
+        3.230835,
+        0.7150541
+      ],
+      "min": [
+        -0.7150541,
+        -0.1581023,
+        -0.7150541
+      ]
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5123,
+      "count": 1584,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 50,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 50,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5126,
+      "count": 50,
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 8,
+      "componentType": 5126,
+      "count": 50,
+      "type": "VEC3",
+      "max": [
+        1.90243,
+        4.709943,
+        1.90243
+      ],
+      "min": [
+        -1.90243,
+        -0.5,
+        -1.90243
+      ]
+    },
+    {
+      "bufferView": 9,
+      "componentType": 5123,
+      "count": 144,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "generator": "glTF Tools for Unity",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 5424
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 5424,
+      "byteLength": 8136
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 13560,
+      "byteLength": 10848
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 24408,
+      "byteLength": 8136
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 32544,
+      "byteLength": 3168
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 35712,
+      "byteLength": 400
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 36112,
+      "byteLength": 600
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 36712,
+      "byteLength": 800
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 37512,
+      "byteLength": 600
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 38112,
+      "byteLength": 288
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "flashLight.bin",
+      "byteLength": 38400
+    }
+  ],
+  "images": [
+    {
+      "uri": "flashLight_baseColor1.png"
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "TEXCOORD_0": 0,
+            "NORMAL": 1,
+            "TANGENT": 2,
+            "POSITION": 3
+          },
+          "indices": 4,
+          "material": 0
+        }
+      ],
+      "name": "Cylinder"
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "TEXCOORD_0": 5,
+            "NORMAL": 6,
+            "TANGENT": 7,
+            "POSITION": 8
+          },
+          "indices": 9,
+          "material": 1
+        }
+      ],
+      "name": "Cylinder1"
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.003676507,
+          0.003676507,
+          0.003676507,
+          1.0
+        ],
+        "metallicFactor": 0.0
+      },
+      "name": "Standard"
+    },
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      },
+      "emissiveFactor": [
+        0.0102621559,
+        0.0102621559,
+        0.0102621559
+      ],
+      "emissiveTexture": {
+        "index": 0
+      },
+      "alphaMode": "BLEND",
+      "name": "Standard2"
+    }
+  ],
+  "nodes": [
+    {
+      "translation": [
+        0.0,
+        1.53636634,
+        0.0
+      ],
+      "name": "CameraPreset"
+    },
+    {
+      "mesh": 0,
+      "name": "Cylinder"
+    },
+    {
+      "mesh": 1,
+      "scale": [
+        1.1734,
+        1.1734,
+        1.1734
+      ],
+      "translation": [
+        0.0,
+        3.7333,
+        0.0
+      ],
+      "name": "Cylinder1"
+    },
+    {
+      "children": [
+        0,
+        1,
+        2
+      ],
+      "scale": [
+        0.09661835,
+        0.09661835,
+        0.09661835
+      ],
+      "translation": [
+        0.0,
+        -0.019844,
+        2.58
+      ],
+      "name": "flashLight"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        3
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "source": 0
+    }
+  ]
+}
