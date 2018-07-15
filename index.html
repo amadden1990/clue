@@ -10,7 +10,7 @@ https://sdk.altvr.com/libs/altspace.js/2.9.0/altspace.min.js"></script></head>
 <img id="ceiling_1" src="textures\ceiling_1.jpg">
 <img id="tile_1" src="textures\tile_1.jpg">
 <a-asset-item id="flashLight" src="models\/flashLight.gltf"></a-asset-item>
-    <a-mixin id='search' src="models\/flashLight.gltf" n-skeleton-parent='part: hand; side: right'></a-mixin>
+    <a-mixin id='search' geometry='primitive:sphere' n-skeleton-parent='part: hand; side: right'></a-mixin>
 </a-assets>
 
 <a-entity id="door " geometry="primitive: box; width:1.492846; height:2.655909; depth:0.06424854;" position="12.104 1.1879 -20.902" rotation="0 270.0001 0" material="shader: 
@@ -313,6 +313,7 @@ standard; transparent: false; color: #575757; src: #wall_1; repeat: 2.5 1; offse
 true; cast: true;" >
 </a-entity>
 <a-entity gltf-model="#flashLight" instantiator='on: click; mixin: search;' ></a-entity>
+    
 </a-scene>
 </body>
 </html>
