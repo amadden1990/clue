@@ -15,6 +15,7 @@ https://sdk.altvr.com/libs/altspace.js/2.9.0/altspace.min.js"></script></head>
 <img id="ceiling_1" src="textures\ceiling_1.jpg">
 <img id="tile_1" src="textures\tile_1.jpg">
 
+<a-mixin id="wood-floor" material="shader: standard; transparent: false; color: #4D4D4D; src: #woodFloor; repeat: 5 5; offset: 0 0;  side: back; "></a-mixin>
 
 </a-assets>
 
@@ -218,8 +219,8 @@ standard; transparent: false; color: #FFFFFF; src: #purpleWall; repeat: 2 1; off
 false; cast: false;" >
 </a-entity>
 
-<a-entity id="tile " geometry="primitive: plane; width:22.55203; height:-22.55203;" position="56.86 -0.1 16.6722" rotation="-90 0 0" material="shader: 
-standard; transparent: false; color: #4D4D4D; src: #woodFloor; repeat: 5 5; offset: 0 0;  side: back; " shadow="receive: 
+<a-entity id="tile " geometry="primitive: plane; width:22.55203; height:-22.55203;" position="56.86 -0.1 16.6722" rotation="-90 0 0" mixin="wood-floor" 
+shadow="receive: 
 false; cast: false;" >
 </a-entity>
 
@@ -712,32 +713,32 @@ false; cast: false;" >
 <a-entity id="kitchen-enter" position="-63.319 0 -52.896"></a-entity>
 <a-entity id="dining-enter" position="-63.2 0 0.47"></a-entity>
 
-<a-entity position=" 43.04 0.5 50.719" rotation=" 0 1.707547E-06 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
-<a-entity position=" 48.13 0.5 16.2" rotation=" 0 270 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
-<a-entity position=" 46.43 0.5 -18.6" rotation=" 0 270 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
-<a-entity position=" 48.42 0.5 -45.37" rotation=" 0 270 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
-<a-entity position=" -12.202 0.5 -54.89" rotation=" 0 270 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
-<a-entity position=" -7.71 0.5 -47.33" rotation=" 0 179.9999 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
-<a-entity position=" 7 0.5 -47.33" rotation=" 0 179.9999 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
-<a-entity position=" 12.035 0.5 -54.892" rotation=" 0 90.0001 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
-<a-entity position=" -56.8 0.5 -45.1" rotation=" 0 180 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
-<a-entity position=" -52.949 0.5 0.4139999" rotation=" 0 90.00007 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
-<a-entity position=" -57.74 0.5 10.53" rotation=" 0 180 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
-<a-entity position=" -55.8 0.5 46.7" rotation=" 0 1.707547E-06 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
-<a-entity position=" -1.08 0.5 47.473" rotation=" 0 1.707547E-06 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
-<a-entity position=" 15.07 0.5 12.23" rotation=" 0 90.00001 0" scale=" 0 0 1" n-portal='targetEntity: #library-enter'></a-entity>
-<a-entity position=" 17.48 0.5 25.706" rotation=" 0 180 0" scale=" 0 0 1" n-portal='targetEntity: #study-enter'></a-entity>
-<a-entity position=" 0.51 0.5 16.697" rotation=" 0 180 0" scale=" 0 0 1" n-portal='targetEntity: #hall-enter'></a-entity>
-<a-entity position=" -16.79 0.5 19.75" rotation=" 0 180 0" scale=" 0 0 1" n-portal='targetEntity: #lounge-enter'></a-entity>
-<a-entity position=" -16.79 0.5 10.586" rotation=" 0 6.830189E-06 0" scale=" 0 0 1" n-portal='targetEntity: #dining-enter'></a-entity>
-<a-entity position=" -12.052 0.5 0.4" rotation=" 0 270 0" scale=" 0 0 1" n-portal='targetEntity: #dining-enter'></a-entity>
-<a-entity position=" 18.161 0.5 -5.83" rotation=" 0 90.00001 0" scale=" 0 0 1" n-portal='targetEntity: #billards-enter'></a-entity>
-<a-entity position=" -21.73 0.5 -16.498" rotation=" 0 0 0" scale=" 0 0 1" n-portal='targetEntity: #kitchen-enter'></a-entity>
-<a-entity position=" 12.104 0.5 -20.902" rotation=" 0 270.0001 0" scale=" 0 0 1" n-portal='targetEntity: #ballroom-enter'></a-entity>
-<a-entity position=" 7 0.5 -13.3882" rotation=" 0 0 0" scale=" 0 0 1" n-portal='targetEntity: #ballroom-enter'></a-entity>
-<a-entity position=" -7.71 0.5 -13.3882" rotation=" 0 0 0" scale=" 0 0 1" n-portal='targetEntity: #ballroom-enter'></a-entity>
-<a-entity position=" -12.258 0.5 -20.9" rotation=" 0 90.00005 0" scale=" 0 0 1" n-portal='targetEntity: #ballroom-enter'></a-entity>
-<a-entity position=" 21.252 0.5 -21.257" rotation=" 0 90.00001 0" scale=" 0 0 1" n-portal='targetEntity: #conservatory-enter'></a-entity>
+<a-entity position=" 43.04 1 50.719" rotation=" 0 1.707547E-06 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
+<a-entity position=" 48.13 1 16.2" rotation=" 0 270 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
+<a-entity position=" 46.43 1 -18.6" rotation=" 0 270 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
+<a-entity position=" 48.42 1 -45.37" rotation=" 0 270 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
+<a-entity position=" -12.202 1 -54.89" rotation=" 0 270 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
+<a-entity position=" -7.71 1 -47.33" rotation=" 0 179.9999 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
+<a-entity position=" 7 1 -47.33" rotation=" 0 179.9999 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
+<a-entity position=" 12.035 1 -54.892" rotation=" 0 90.0001 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
+<a-entity position=" -56.8 1 -45.1" rotation=" 0 180 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
+<a-entity position=" -52.949 1 0.4139999" rotation=" 0 90.00007 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
+<a-entity position=" -57.74 1 10.53" rotation=" 0 180 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
+<a-entity position=" -55.8 1 46.7" rotation=" 0 1.707547E-06 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
+<a-entity position=" -1.08 1 47.473" rotation=" 0 1.707547E-06 0" scale=" 0 0 1" n-portal='targetEntity: #home'></a-entity>
+<a-entity position=" 15.07 1 12.23" rotation=" 0 90.00001 0" scale=" 0 0 1" n-portal='targetEntity: #library-enter'></a-entity>
+<a-entity position=" 17.48 1 25.706" rotation=" 0 180 0" scale=" 0 0 1" n-portal='targetEntity: #study-enter'></a-entity>
+<a-entity position=" 0.51 1 16.697" rotation=" 0 180 0" scale=" 0 0 1" n-portal='targetEntity: #hall-enter'></a-entity>
+<a-entity position=" -16.79 1 19.75" rotation=" 0 180 0" scale=" 0 0 1" n-portal='targetEntity: #lounge-enter'></a-entity>
+<a-entity position=" -16.79 1 10.586" rotation=" 0 6.830189E-06 0" scale=" 0 0 1" n-portal='targetEntity: #dining-enter'></a-entity>
+<a-entity position=" -12.052 1 0.4" rotation=" 0 270 0" scale=" 0 0 1" n-portal='targetEntity: #dining-enter'></a-entity>
+<a-entity position=" 18.161 1 -5.83" rotation=" 0 90.00001 0" scale=" 0 0 1" n-portal='targetEntity: #billards-enter'></a-entity>
+<a-entity position=" -21.73 1 -16.498" rotation=" 0 0 0" scale=" 0 0 1" n-portal='targetEntity: #kitchen-enter'></a-entity>
+<a-entity position=" 12.104 1 -20.902" rotation=" 0 270.0001 0" scale=" 0 0 1" n-portal='targetEntity: #ballroom-enter'></a-entity>
+<a-entity position=" 7 1 -13.3882" rotation=" 0 0 0" scale=" 0 0 1" n-portal='targetEntity: #ballroom-enter'></a-entity>
+<a-entity position=" -7.71 1 -13.3882" rotation=" 0 0 0" scale=" 0 0 1" n-portal='targetEntity: #ballroom-enter'></a-entity>
+<a-entity position=" -12.258 1 -20.9" rotation=" 0 90.00005 0" scale=" 0 0 1" n-portal='targetEntity: #ballroom-enter'></a-entity>
+<a-entity position=" 21.252 1 -21.257" rotation=" 0 90.00001 0" scale=" 0 0 1" n-portal='targetEntity: #conservatory-enter'></a-entity>
 
 </a-scene>
 </body>
