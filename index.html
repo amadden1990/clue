@@ -5,6 +5,7 @@ https://sdk.altvr.com/libs/altspace.js/2.9.0/altspace.min.js"></script></head>
 <body>
 <a-scene altspace="fullspace: true">
 <a-assets>
+<img id="ceiling_1" src="textures\ceiling_1.jpg">
 <img id="woodFloor" src="textures\woodFloor.jpg">
 <img id="door" src="textures\door.jpg">
 <img id="blueWall" src="textures\blueWall.jpg">
@@ -12,7 +13,6 @@ https://sdk.altvr.com/libs/altspace.js/2.9.0/altspace.min.js"></script></head>
 <img id="purpleWall" src="textures\purpleWall.jpg">
 <img id="checkeredTile" src="textures\checkeredTile.jpg">
 <img id="wall_1" src="textures\wall_1.jpg">
-<img id="ceiling_1" src="textures\ceiling_1.jpg">
 <img id="tile_1" src="textures\tile_1.jpg">
 
 <a-mixin id="wood-floor" material="shader: standard; transparent: false; color: #4D4D4D; src: #woodFloor; repeat: 5 5; offset: 0 0;  side: back; "></a-mixin>
@@ -20,6 +20,51 @@ https://sdk.altvr.com/libs/altspace.js/2.9.0/altspace.min.js"></script></head>
 </a-assets>
 <a-entity position="-1.07 0.96 61.09" rotation="0 180 0" scale="2.875139 2.875139 2.875139" n-layout-browser='isEnclosure:true; url:http://apps.altvr.com/secret6-20180517/projects/poker/index.html;'></a-entity>
  
+
+<a-entity id="ceiling " geometry="primitive: plane; width:29.20183; height:-29.20179;" position="-64.4 3.6 53.8" rotation="90 0 0" material="shader: 
+standard; transparent: false; color: #373737; src: #ceiling_1; repeat: 50 50; offset: 0 0;  side: back; " shadow="receive: 
+false; cast: false;" >
+</a-entity>
+
+<a-entity id="ceiling " geometry="primitive: plane; width:29.20183; height:-29.20179;" position="-64.4 3.6 1" rotation="90 0 0" material="shader: 
+standard; transparent: false; color: #373737; src: #ceiling_1; repeat: 50 50; offset: 0 0;  side: back; " shadow="receive: 
+false; cast: false;" >
+</a-entity>
+
+<a-entity id="ceiling " geometry="primitive: plane; width:29.20183; height:-29.20179;" position="-64.4 3.6 -52.1" rotation="90 0 0" material="shader: 
+standard; transparent: false; color: #373737; src: #ceiling_1; repeat: 50 50; offset: 0 0;  side: back; " shadow="receive: 
+false; cast: false;" >
+</a-entity>
+
+<a-entity id="ceiling " geometry="primitive: plane; width:29.20183; height:-29.20179;" position="0.2 3.6 -58.8" rotation="90 0 0" material="shader: 
+standard; transparent: false; color: #373737; src: #ceiling_1; repeat: 50 50; offset: 0 0;  side: back; " shadow="receive: 
+false; cast: false;" >
+</a-entity>
+
+<a-entity id="ceiling " geometry="primitive: plane; width:29.20183; height:-29.20179;" position="57.4 3.6 -55.3" rotation="90 0 0" material="shader: 
+standard; transparent: false; color: #373737; src: #ceiling_1; repeat: 50 50; offset: 0 0;  side: back; " shadow="receive: 
+false; cast: false;" >
+</a-entity>
+
+<a-entity id="ceiling " geometry="primitive: plane; width:29.20183; height:-29.20179;" position="58.6 3.6 -18.9" rotation="90 0 0" material="shader: 
+standard; transparent: false; color: #373737; src: #ceiling_1; repeat: 50 50; offset: 0 0;  side: back; " shadow="receive: 
+false; cast: false;" >
+</a-entity>
+
+<a-entity id="ceiling " geometry="primitive: plane; width:24.33485; height:-24.33483;" position="56.8 3.6 16.3" rotation="90 0 0" material="shader: 
+standard; transparent: false; color: #373737; src: #ceiling_1; repeat: 50 50; offset: 0 0;  side: back; " shadow="receive: 
+false; cast: false;" >
+</a-entity>
+
+<a-entity id="ceiling " geometry="primitive: plane; width:24.33485; height:-24.33483;" position="51.2 3.6 56.5" rotation="90 0 0" material="shader: 
+standard; transparent: false; color: #373737; src: #ceiling_1; repeat: 50 50; offset: 0 0;  side: back; " shadow="receive: 
+false; cast: false;" >
+</a-entity>
+
+<a-entity id="ceiling " geometry="primitive: plane; width:24.33485; height:-24.33483;" position="-2.5 3.6 57.1" rotation="90 0 0" material="shader: 
+standard; transparent: false; color: #373737; src: #ceiling_1; repeat: 50 50; offset: 0 0;  side: back; " shadow="receive: 
+false; cast: false;" >
+</a-entity>
 
 <a-entity id="tile " geometry="primitive: plane; width:28.41556; height:-28.41556;" position="59 -0.1 -18.5" rotation="-90 0 0" mixin="wood-floor" 
 shadow="receive: 
